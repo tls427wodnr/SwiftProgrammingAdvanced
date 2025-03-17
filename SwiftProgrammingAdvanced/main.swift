@@ -7,5 +7,7 @@
 
 import Foundation
 
-print("Hello, World!")
-
+solveEssentialProblem1()
+solveEssentialProblem2()
+solveEssentialProblem3()
+solveChallengeProblem1()
