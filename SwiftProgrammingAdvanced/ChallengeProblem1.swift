@@ -29,6 +29,9 @@ protocol CarProtocol {
 }
 
 // 프로토콜을 이용하면 공통 로직을 작성할수 없기에 같은 로직을 모든 클래스에서 다시 작성해야 한다.
+// 프로토콜은 struct에서도 채택할 수 있다.
+// struct는 값 타입이라 Heap 메모리가 아니라 Stack 메모리를 사용하여 참조 카운트(ARC) 관리가 필요 없다.
+// 그래서 메모리 관리가 더 효율적이고 빠르다.
 struct ElectricCar: CarProtocol {
     var brand: String
     
@@ -51,9 +54,6 @@ struct ElectricCar: CarProtocol {
     }
 }
 
-// 프로토콜은 struct에서도 채택할 수 있다.
-// struct는 값 타입이라 Heap 메모리가 아니라 Stack 메모리를 사용하여 참조 카운트(ARC) 관리가 필요 없다.
-// 그래서 메모리 관리가 더 효율적이고 빠르다.
 struct HybridCar: CarProtocol {
     var brand: String
     
