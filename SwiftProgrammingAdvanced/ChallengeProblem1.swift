@@ -136,6 +136,7 @@ struct HybridCar: CarProtocol {
 //}
 
 func solveChallengeProblem1() {
+    // struct는 디폴트 이니셜라이저를 제공하여서 이니셜라이저를 직접 구현할 필요 없다.
     var hybridCar = HybridCar(brand: "Kia", model: "str-2020", modelYear: 2020, engine: Engine(type: EngineType.hydrogen))
  //   let hybridCar = HybridCard(brand: "Kia", model: "str-2020", modelYear: 2020)
     print(hybridCar.engine.type)
