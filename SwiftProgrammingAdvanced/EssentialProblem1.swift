@@ -20,8 +20,8 @@ func solveEssentialProblem1() {
     
     // 위에서 정의한 sum과 동일한 타입의 클로저를 파라미터로 받고, 반환 값이 없는(void) 함수 calculate를 작성해주세요.
     // (조건) calculate 함수 구현 내에서는 파라미터로 전달받은 클로저를 호출하는 코드를 포함해야합니다.
-    func calculate(num1: Int, num2: Int, closure: (Int, Int) -> String) -> String {
-        return closure(num1, num2)
+    func calculate(num1: Int, num2: Int, closure: (Int, Int) -> String) {
+        print(closure(num1, num2))
     }
-    print(calculate(num1: 1, num2: 3, closure: sum))
+    calculate(num1: 1, num2: 3, closure: sum)
 }

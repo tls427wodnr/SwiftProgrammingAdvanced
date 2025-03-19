@@ -6,13 +6,20 @@
 //
 
 // 아래 forEach 문을 map 을 사용하는 코드로 변환해주세요.
+/*
+let numbers = [1, 2, 3, 4, 5]
+
+var result = [String]()
+
+for number in numbers {
+  result.append("\(number)")
+}
+*/
 func solveEssentialProblem2_1() {
     let numbers = [1, 2, 3, 4, 5]
-    
-    var result = [Int]()
-    
-    numbers.map {
-        result.append($0)
+        
+    let result = numbers.map {
+        String($0)
     }
     
     print(result)
