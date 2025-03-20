@@ -57,7 +57,7 @@ func solveEssentialProblem3() {
         }
         return result
     }
-    
+
     print(d([1, 2, 3, 4, 5]))
     //print(d(["가","나","다","라","마"])) // 오류 발생
 }

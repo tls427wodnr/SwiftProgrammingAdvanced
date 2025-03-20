@@ -34,11 +34,8 @@ protocol CarProtocol {
 // 그래서 메모리 관리가 더 효율적이고 빠르다.
 struct ElectricCar: CarProtocol {
     var brand: String
-    
     var model: String
-    
     var modelYear: Int
-    
     var engine: Engine
     
     func drive() {
@@ -56,11 +53,8 @@ struct ElectricCar: CarProtocol {
 
 struct HybridCar: CarProtocol {
     var brand: String
-    
     var model: String
-    
     var modelYear: Int
-    
     var engine: Engine
     
     func drive() {
